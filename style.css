@@ -300,6 +300,81 @@ h2 {
     transform: translateY(-2px);
 }
 
+/* =========================
+   Teaching Section
+========================= */
+
+#teaching {
+    padding: 60px 10%;
+    background-color: #1a1d3b;
+}
+
+.teaching-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.teaching-grid .project {
+    background: #0b0f2b;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect 🔥 */
+.teaching-grid .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(109, 106, 255, 0.3);
+}
+
+/* Title */
+.teaching-grid h3 {
+    color: #6d6aff;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+/* Text */
+.teaching-grid p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+/* List */
+.teaching-grid ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.teaching-grid li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* Button */
+.teaching-grid .project-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #6d6aff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.teaching-grid .project-link:hover {
+    background: #4a49c4;
+    transform: scale(1.05);
+}
+
+
 /* Responsive design */
 @media (max-width: 768px) {
     header {
